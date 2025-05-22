@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BorderFull - Add Borders to Your Images</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BorderFull</h1>
+            <p>Upload an image, add a border, and download the result</p>
+        </header>
+        
+        <main>
+            <div class="upload-container">
+                <label for="image-upload" class="upload-label">
+                    <span>Upload Image</span>
+                </label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            
+            <div class="editor-container hidden" id="editor-container">
+                <div class="image-preview-container">
+                    <div id="image-preview"></div>
+                </div>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Border Thickness</label>
+                        <div class="thickness-options">
+                            <button class="thickness-btn" data-thickness="5">Thin</button>
+                            <button class="thickness-btn" data-thickness="10">Medium</button>
+                            <button class="thickness-btn" data-thickness="20">Thick</button>
+                            <button class="thickness-btn" data-thickness="40">Extra Thick</button>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label>Border Color</label>
+                        <div class="color-options">
+                            <button class="color-btn" data-color="#000000" style="background-color: #000000;"></button>
+                            <button class="color-btn" data-color="#ffffff" style="background-color: #ffffff;"></button>
+                            <button class="color-btn" data-color="#ff0000" style="background-color: #585858;"></button>
+                            <button class="color-btn" data-color="#00ff00" style="background-color: #00ff00;"></button>
+                            <button class="color-btn" data-color="#0000ff" style="background-color: #0000ff;"></button>
+                            <button class="color-btn" data-color="#ffff00" style="background-color: #ffff00;"></button>
+                            <button class="color-btn" data-color="#ff00ff" style="background-color: #ff00ff;"></button>
+                            <button class="color-btn" data-color="#00ffff" style="background-color: #00ffff;"></button>
+                        </div>
+                    </div>
+                    
+                    <button id="download-btn" class="download-btn">Download Image</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>BorderFull - A simple border addition app</p>
+        </footer>
+    </div>
+    
+    <script src="public/js/app.js"></script>
+</body>
+</html> 
